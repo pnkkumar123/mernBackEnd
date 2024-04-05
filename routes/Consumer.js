@@ -14,6 +14,12 @@ import { paymentResponse } from '../middleWares/PaymentController.js';
 
 const consumerroute = express.Router()
 
+consumerroute.get("/consumer/getkey", (req, res) => {
+
+  const razorpayApiKey = process.env.RAZORPAY_API_KEY;
+  
+  res.status(200).json({ key: razorpayApiKey });
+});
 consumerroute.post("/signup",async(req,res)=>{
     const {name,userName,password,email} = req.body;
     try{

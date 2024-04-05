@@ -26,9 +26,6 @@ app.listen("5000",()=>{
 app.use("/createProduct",createProduct)
 app.use("/seller",route)
 app.use("/consumer",consumerroute)
-app.get("/consumer/getkey",(req,res)=>
-      res.status(200).json({key:process.env.RAZORPAY_API_KEY})
-)
 
 
 
