@@ -1,10 +1,10 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
-import createProduct from './api/routes/createProduct.js'
-import route from './api/routes/Auth.js'
+import createProduct from './routes/createProduct.js'
+import route from './routes/Auth.js'
 import cors from 'cors';
-import consumerroute from './api/routes/Consumer.js'
+import consumerroute from './routes/Consumer.js'
 import path from 'path'
 
 dotenv.config()
