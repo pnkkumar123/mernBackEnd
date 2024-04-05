@@ -30,5 +30,5 @@ app.get("/consumer/getkey",(req,res)=>
       res.status(200).json({key:process.env.RAZORPAY_API_KEY})
 )
 
-app.use(express.static(path.join(__dirname, '/frontEnd/dist')));
+
 
